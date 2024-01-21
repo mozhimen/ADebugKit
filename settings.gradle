@@ -1,0 +1,41 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/grails-core' }
+        maven { url 'https://raw.githubusercontent.com/saki4510t/libcommon/master/repository/' }
+        maven { url 'https://gitee.com/liuchaoya/libcommon/raw/master/repository/' }
+        maven { url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://www.jitpack.io' }
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = "ADebugKit"
+include ':app'
+include ':debugk'
+//SwiftKit
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+include ':SwiftKit:uicorek'
+include ':SwiftKit:componentk'
+//ACrashKit
+include ':ACrashKit'
+project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
+include ':ACrashKit:crashk'
+//ALogKit
+include ':ALogKit'
+project(':ALogKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ALogKit")
+include ':ALogKit:logk'
+//AOptKit_fps
+include ':AOptKit_fps'
+project(':AOptKit_fps').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit_fps")
+include ':AOptKit_fps:optk_fps'
