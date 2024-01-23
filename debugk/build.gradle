@@ -46,7 +46,6 @@ dependencies {
 
     implementation project(':SwiftKit:basick')
     implementation project(':SwiftKit:uicorek')
-    implementation project(':SwiftKit:componentk')
     implementation project(':ACrashKit:crashk')
     implementation project(':ALogKit:logk')
     implementation project(':AOptKit_fps:optk_fps')
