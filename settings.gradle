@@ -26,7 +26,6 @@ include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
 include ':SwiftKit:uicorek'
-include ':SwiftKit:componentk'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
@@ -39,3 +38,14 @@ include ':ALogKit:logk'
 include ':AOptKit_fps'
 project(':AOptKit_fps').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit_fps")
 include ':AOptKit_fps:optk_fps'
+//AUICoreKit
+include ':AUICoreKit'
+project(':AUICoreKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AUICoreKit")
+include ':AUICoreKit:layoutk_tab'
+include ':AUICoreKit:recyclerk'
+include ':AUICoreKit:vhk'
+include ':AUICoreKit:layoutk'
+//ANavigateK_Navigation
+include ':ANavigateKit_Navigation'
+project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
+include ':ANavigateKit_Navigation:navigatek_navigation'

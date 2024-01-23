@@ -17,8 +17,8 @@ import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.databinding.DebugkActivityCrashkBinding
 import com.mozhimen.debugk.databinding.DebugkItemCrashkFileBinding
 import com.mozhimen.debugk.mos.MDebugKCrashK
-import com.mozhimen.uicorek.adapterk.quick.AdapterKQuickRecyclerVB
 import com.mozhimen.crashk.CrashKMgr
+import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 
 /**
  * @ClassName DebugKCrashKActivity

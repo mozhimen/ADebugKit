@@ -17,7 +17,7 @@ import com.mozhimen.debugk.databinding.DebugkItemCrashkFileBinding
 import com.mozhimen.debugk.mos.MDebugKCrashK
 import com.mozhimen.logk.LogKMgr
 import com.mozhimen.logk.temps.printer.LogKPrinterFile
-import com.mozhimen.uicorek.adapterk.quick.AdapterKQuickRecyclerVB
+import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 
 /**
  * @property _dataSets ArrayList<MDebugKCrashK>

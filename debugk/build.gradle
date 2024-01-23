@@ -46,9 +46,24 @@ dependencies {
 
     implementation project(':SwiftKit:basick')
     implementation project(':SwiftKit:uicorek')
+
+    //crash
     implementation project(':ACrashKit:crashk')
+
+    //log
     implementation project(':ALogKit:logk')
+
+    //opt
     implementation project(':AOptKit_fps:optk_fps')
+
+    //navigate
+    implementation project(':ANavigateKit_Navigation:navigatek_navigation')
+
+    //ui
+    implementation project(':AUICoreKit:layoutk_tab')
+    implementation project(':AUICoreKit:recyclerk')
+    implementation project(':AUICoreKit:layoutk')
+    implementation project(':AUICoreKit:vhk')
 
     //leakk
     //debugImplementation 'io.github.knight-zxw:blockcanary:0.0.4'
