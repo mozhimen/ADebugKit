@@ -1,6 +1,8 @@
 package com.mozhimen.debugk.cons
 
 import android.annotation.SuppressLint
+import android.os.Build
+import androidx.annotation.RequiresApi
 import com.mozhimen.basick.elemk.android.os.cons.CBuild
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.manifestk.annors.AManifestKRequire
@@ -28,7 +30,6 @@ import com.mozhimen.debugk.annors.ADebugKParams
 class DebugKParams {
     /**
      * 设备参数
-     * @return String
      */
     @ADebugKParams("设备参数")
     fun deviceParams(): String = ""
@@ -61,9 +62,10 @@ class DebugKParams {
     @ADebugKParams("设备默认IMEI")
     fun deviceIMEI(): String = UtilKDevice.getImei()
 
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * 构建参数
-     * @return String
      */
     @ADebugKParams("构建参数")
     fun buildParams(): String = ""
@@ -123,12 +125,15 @@ class DebugKParams {
     @ADebugKParams("构建最终用户名")
     fun buildModel(): String = UtilKBuild.getModel()
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持架构")
     fun buildSupportABIs(): String = UtilKBuild.getSupportABIs()
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持32位架构")
     fun buildSupport32BitABIs(): String = UtilKBuild.getSupport32BitABIs()
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持64位架构")
     fun buildSupport64BitABIs(): String = UtilKBuild.getSupport64BitABIs()
 
@@ -147,33 +152,34 @@ class DebugKParams {
     @ADebugKParams("构建系统引导加载程序版本")
     fun buildBootLoader(): String = UtilKBuild.getBootLoader()
 
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * 屏幕参数
-     * @return String
      */
     @ADebugKParams("屏幕参数")
     fun screenParams(): String = ""
 
     @ADebugKParams("屏幕尺寸")
-    fun screenSize(): String = UtilKScreen.getSize().toString()
+    fun screenSize(): String = UtilKScreen.getSize_ofSysMetrics().toString()
 
     @ADebugKParams("屏幕真实分辨率px")
     fun screenResolution(): String =
-        "设备分辨率: w " + UtilKScreen.getWidthOfWindow() + " h " + UtilKScreen.getHeightOfWindow()
+        "设备分辨率: w " + UtilKScreen.getWidth() + " h " + UtilKScreen.getHeight()
 
     @ADebugKParams("屏幕当前分辨率px")
     fun screenResolution2(): String =
-        "设备分辨率: w " + UtilKScreen.getWidthOfDisplay() + " h " + UtilKScreen.getHeightOfDisplay()
+        "设备分辨率: w " + UtilKScreen.getWidth_ofSysMetrics() + " h " + UtilKScreen.getHeight_ofSysMetrics()
 
     @ADebugKParams("屏幕分辨率dp")
     fun screenResolutionDpi(): String =
-        "设备分辨率: w " + UtilKScreen.getWidthDp() + " h " + UtilKScreen.getHeightDp()
+        "设备分辨率: w " + UtilKScreen.getWidthDp_ofSysConfig() + " h " + UtilKScreen.getHeightDp_ofSysConfig()
 
     @ADebugKParams("屏幕密度px")
-    fun screenDensity(): String = UtilKScreen.getDensity().toString()
+    fun screenDensity(): String = UtilKScreen.getDensity_ofSysMetrics().toString()
 
     @ADebugKParams("屏幕密度dp")
-    fun screenDensityDpi(): String = UtilKScreen.getDensityDpi().toString()
+    fun screenDensityDpi(): String = UtilKScreen.getDensity_ofSysMetrics().toString()
 
     @ADebugKParams("状态栏高度")
     fun screenStatusBarHeight(): String = UtilKStatusBar.getHeight().toString()
@@ -182,5 +188,5 @@ class DebugKParams {
     fun screenNavigationBarHeight(): String = UtilKNavigationBar.getHeight().toString()
 
     @ADebugKParams("屏幕竖屏")
-    fun screenIsPortrait(): String = if (UtilKScreen.isOrientationPortrait()) "是" else "否"
+    fun screenIsPortrait(): String = if (UtilKScreen.isOrientationPortrait_ofSysConfig()) "是" else "否"
 }
