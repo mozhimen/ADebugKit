@@ -25,7 +25,7 @@ package com.mozhimen.debugk.bases//package com.mozhimen.debugk.bases
 //    private var _currentItemId: Int = 0
 //        set(value) {
 //            if (value == -1 || !this::_navController.isInitialized) return
-//            _navController.navigate(resId = value)
+//            _navController.navigate(intRes = value)
 //            field = value
 //        }
 //
