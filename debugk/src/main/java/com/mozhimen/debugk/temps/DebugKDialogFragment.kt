@@ -51,7 +51,7 @@ class DebugKDialogFragment : AppCompatDialogFragment() {
 
         _debugKRecycler = view.findViewById(R.id.debugk_dialog_recycler)
         val itemDecoration = DividerItemDecoration(view.context, DividerItemDecoration.VERTICAL)
-        itemDecoration.setDrawable(UtilKRes.getDrawable(R.drawable.debugk_crashk_divider)!!)
+        itemDecoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
         _debugKRecycler.addItemDecoration(itemDecoration)
 
         val methods = mutableListOf<MDebugKMethod>()

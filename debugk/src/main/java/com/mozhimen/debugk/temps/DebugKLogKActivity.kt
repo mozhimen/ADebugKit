@@ -35,7 +35,7 @@ class DebugKLogKActivity : BaseActivityVB<DebugkActivityLogkBinding>() {
         }
 
         val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        decoration.setDrawable(UtilKRes.getDrawable(R.drawable.debugk_crashk_divider)!!)
+        decoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
         vb.debugkLogkRecycler.addItemDecoration(decoration)
 
         vb.debugkLogkRecycler.layoutManager = LinearLayoutManager(this)

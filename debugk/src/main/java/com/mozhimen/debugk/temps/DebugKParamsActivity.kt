@@ -41,7 +41,7 @@ class DebugKParamsActivity : BaseActivityVB<DebugkActivityParamsBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
         val itemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        itemDecoration.setDrawable(UtilKRes.getDrawable(R.drawable.debugk_crashk_divider)!!)
+        itemDecoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
         vb.debugkParamsRecycler.addItemDecoration(itemDecoration)
 
         val params = mutableListOf<MDebugKMethod>()

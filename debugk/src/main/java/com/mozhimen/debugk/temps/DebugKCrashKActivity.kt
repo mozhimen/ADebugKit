@@ -38,7 +38,7 @@ class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
         for (file in crashFiles) _dataSets.add(MDebugKCrashK(file.name, file))
 
         val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        decoration.setDrawable(UtilKRes.getDrawable(R.drawable.debugk_crashk_divider)!!)
+        decoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
         vb.debugkCrashkRecycler.addItemDecoration(decoration)
 
         vb.debugkCrashkRecycler.layoutManager = LinearLayoutManager(this)
