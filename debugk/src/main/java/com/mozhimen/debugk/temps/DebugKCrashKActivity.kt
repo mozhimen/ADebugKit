@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.basick.elemk.android.content.cons.CIntent
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
-import com.mozhimen.basick.lintk.optin.OptInApiInit_InApplication
+import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.basick.utilk.android.content.UtilKRes
@@ -31,7 +31,7 @@ import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
     private val _dataSets = ArrayList<MDebugKCrashK>()
 
-    @OptIn(OptInApiInit_InApplication::class)
+    @OptIn(OApiInit_InApplication::class)
     override fun initView(savedInstanceState: Bundle?) {
         val crashFiles = CrashKMgr.instance.getCrashFiles()
 

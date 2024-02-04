@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mozhimen.basick.elemk.android.view.cons.CWinMgr
-import com.mozhimen.basick.lintk.optin.OptInApiInit_InApplication
+import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.basick.utilk.android.content.UtilKRes
@@ -31,7 +31,7 @@ import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
  * @Date 2022/5/26 17:37
  * @Version 1.0
  */
-@OptIn(OptInApiInit_InApplication::class)
+@OptIn(OApiInit_InApplication::class)
 @AManifestKRequire(CPermission.SYSTEM_ALERT_WINDOW)
 class DebugKDialogFragment : AppCompatDialogFragment() {
     private val _debugMethods = arrayOf(DebugKTools::class.java)

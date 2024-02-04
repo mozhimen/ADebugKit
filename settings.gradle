@@ -49,3 +49,4 @@ include ':AUICoreKit:layoutk'
 include ':ANavigateKit_Navigation'
 project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
 include ':ANavigateKit_Navigation:navigatek_navigation'
+include ':debugk_leakcanary'
