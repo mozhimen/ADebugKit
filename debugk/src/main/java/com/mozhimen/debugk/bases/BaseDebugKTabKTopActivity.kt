@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.lintk.optins.permission.OPermission_INTERNET
 import com.mozhimen.basick.manifestk.cons.CPermission
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.uicorek.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.util.dp2px
@@ -21,7 +21,6 @@ import com.mozhimen.uicorek.layoutk.tab.top.mos.MTabTop
  * @Date 2022/11/16 15:25
  * @Version 1.0
  */
-@AManifestKRequire(CPermission.INTERNET)
 abstract class BaseDebugKTabKTopActivity : BaseActivityVB<DebugkActivityTabkTopBinding>() {
     private val _tabList: ArrayList<DebugKUITabTopItem> by lazy { getTabList() }
 
@@ -31,6 +30,7 @@ abstract class BaseDebugKTabKTopActivity : BaseActivityVB<DebugkActivityTabkTopB
         initAdaptKSystemBar()
     }
 
+    @OptIn(OPermission_INTERNET::class)
     override fun initView(savedInstanceState: Bundle?) {
         vb.debugkUiTabTop.setTabTopHeight(20f.dp2px())
         vb.debugkUiTabTop.inflateTabItem(_tabList)

@@ -3,7 +3,6 @@ package com.mozhimen.debugk.cons
 import android.app.Activity
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.manifestk.cons.CPermission
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.basick.utilk.android.content.startContext
 import com.mozhimen.basick.utilk.androidx.appcompat.UtilKAppCompatDelegate
 import com.mozhimen.debugk.annors.ADebugKTool
@@ -20,7 +19,6 @@ import com.mozhimen.optk.fps.OptKFps
  * @Version 1.0
  */
 @OApiInit_InApplication
-@AManifestKRequire(CPermission.SYSTEM_ALERT_WINDOW)
 class DebugKTools {
 
 //    @ADebugKTool("开启Https降级", "降级成Http,可以使用抓包工具,明文抓包")

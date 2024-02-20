@@ -4,13 +4,14 @@ import android.annotation.SuppressLint
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.mozhimen.basick.elemk.android.os.cons.CBuild
-import com.mozhimen.basick.manifestk.cons.CPermission
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
+import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PHONE_STATE
+import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
 import com.mozhimen.basick.utilk.android.hardware.UtilKDevice
 import com.mozhimen.basick.utilk.kotlin.boolean2str
 import com.mozhimen.basick.utilk.android.view.UtilKScreen
-import com.mozhimen.basick.utilk.android.net.UtilKNetConn
+import com.mozhimen.basick.utilk.android.net.UtilKNet
 import com.mozhimen.basick.utilk.android.os.UtilKBuild
+import com.mozhimen.basick.utilk.android.os.UtilKBuildVersion
 import com.mozhimen.basick.utilk.android.view.UtilKNavigationBar
 import com.mozhimen.basick.utilk.android.view.UtilKStatusBar
 import com.mozhimen.debugk.BuildConfig
@@ -23,10 +24,7 @@ import com.mozhimen.debugk.annors.ADebugKParams
  * @Date 2022/5/29 10:04
  * @Version 1.0
  */
-@AManifestKRequire(
-    CPermission.READ_PHONE_STATE, CPermission.READ_PRIVILEGED_PHONE_STATE, CPermission.CAMERA,
-    CPermission.ACCESS_NETWORK_STATE, CPermission.ACCESS_WIFI_STATE, CPermission.INTERNET
-)
+@OptIn(OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
 class DebugKParams {
     /**
      * 设备参数
@@ -41,7 +39,7 @@ class DebugKParams {
     fun deviceSerialNoShort(): String = UtilKDevice.getSerialNumberShort()
 
     @ADebugKParams("设备IP")
-    fun deviceIP(): String = UtilKNetConn.getStrIP() ?: CBuild.UNKNOWN
+    fun deviceIP(): String = UtilKNet.getStrIp() ?: CBuild.UNKNOWN
 
     @ADebugKParams("设备Rom版本")
     fun deviceRomVersion(): String = UtilKDevice.getRomVersion()
@@ -60,7 +58,7 @@ class DebugKParams {
 
     @SuppressLint("MissingPermission")
     @ADebugKParams("设备默认IMEI")
-    fun deviceIMEI(): String = UtilKDevice.getImei()
+    fun deviceIMEI(): String = if (UtilKBuildVersion.isAfterV_23_6_M()) UtilKDevice.getImei() else "版本23后查看"
 
     ////////////////////////////////////////////////////////////////////////////////////////////
 

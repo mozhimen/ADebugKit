@@ -7,7 +7,6 @@ import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivi
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.manifestk.permission.ManifestKPermission
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.basick.manifestk.permission.annors.APermissionCheck
 import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.R
@@ -18,14 +17,7 @@ import com.mozhimen.debugk.annors.ADebugKParams
 import com.mozhimen.debugk.mos.MDebugKMethod
 import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 
-@AManifestKRequire(
-    CPermission.READ_PHONE_STATE, CPermission.READ_PRIVILEGED_PHONE_STATE, CPermission.CAMERA,
-    CPermission.ACCESS_NETWORK_STATE, CPermission.ACCESS_WIFI_STATE, CPermission.INTERNET
-)
-@APermissionCheck(
-    CPermission.READ_PHONE_STATE, CPermission.CAMERA,
-    CPermission.ACCESS_NETWORK_STATE, CPermission.ACCESS_WIFI_STATE, CPermission.INTERNET
-)
+@APermissionCheck(CPermission.CAMERA)
 class DebugKParamsActivity : BaseActivityVB<DebugkActivityParamsBinding>() {
     private val _debugParams = arrayOf(DebugKParams::class.java)
 

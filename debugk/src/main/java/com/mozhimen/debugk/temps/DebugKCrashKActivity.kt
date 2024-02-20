@@ -7,8 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.basick.elemk.android.content.cons.CIntent
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
+import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PHONE_STATE
+import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
 import com.mozhimen.basick.manifestk.cons.CPermission
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.content.createChooser
 import com.mozhimen.basick.utilk.java.io.UtilKFileFormat
@@ -27,11 +28,10 @@ import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
  * @Date 2022/5/25 23:00
  * @Version 1.0
  */
-@AManifestKRequire(CPermission.READ_PHONE_STATE, CPermission.READ_PRIVILEGED_PHONE_STATE)
 class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
     private val _dataSets = ArrayList<MDebugKCrashK>()
 
-    @OptIn(OApiInit_InApplication::class)
+    @OptIn(OApiInit_InApplication::class, OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
     override fun initView(savedInstanceState: Bundle?) {
         val crashFiles = CrashKMgr.instance.getCrashFiles()
 
