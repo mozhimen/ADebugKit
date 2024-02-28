@@ -58,6 +58,7 @@ dependencies {
 
     //navigate
     implementation project(':ANavigateKit_Navigation:navigatek_navigation')
+    implementation project(':AAdaptKit:adaptk_systembar')
 
     //ui
     implementation project(':AUICoreKit:layoutk_tab')

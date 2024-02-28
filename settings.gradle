@@ -50,3 +50,7 @@ include ':ANavigateKit_Navigation'
 project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
 include ':ANavigateKit_Navigation:navigatek_navigation'
 include ':debugk_leakcanary'
+//AAdaptKit
+include ':AAdaptKit'
+project(':AAdaptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAdaptKit")
+include ':AAdaptKit:adaptk_systembar'
