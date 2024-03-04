@@ -6,14 +6,14 @@ import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
 import com.mozhimen.basick.elemk.android.view.bases.BaseFlingSimpleOnGestureCallback
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.debugk.DebugK
 import com.mozhimen.debugk.test.databinding.ActivityDebugkBinding
 
-class DebugKActivity : BaseActivityVB<ActivityDebugkBinding>() {
+class DebugKActivity : BaseActivityVDB<ActivityDebugkBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
-        vb.debugkTxt.setOnClickListener {
+        vdb.debugkTxt.setOnClickListener {
             toggleDebugDialog()
         }
     }

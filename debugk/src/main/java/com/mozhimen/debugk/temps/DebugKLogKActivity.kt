@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.basick.elemk.android.content.cons.CIntent
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.content.createChooser
@@ -22,7 +22,7 @@ import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 /**
  * @property _dataSets ArrayList<MDebugKCrashK>
  */
-class DebugKLogKActivity : BaseActivityVB<DebugkActivityLogkBinding>() {
+class DebugKLogKActivity : BaseActivityVDB<DebugkActivityLogkBinding>() {
 
     private val _dataSets = ArrayList<MDebugKCrashK>()
     @OptIn(OApiInit_InApplication::class)
@@ -36,16 +36,16 @@ class DebugKLogKActivity : BaseActivityVB<DebugkActivityLogkBinding>() {
 
         val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         decoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
-        vb.debugkLogkRecycler.addItemDecoration(decoration)
+        vdb.debugkLogkRecycler.addItemDecoration(decoration)
 
-        vb.debugkLogkRecycler.layoutManager = LinearLayoutManager(this)
+        vdb.debugkLogkRecycler.layoutManager = LinearLayoutManager(this)
         val adapterKRecycler =
                 AdapterKQuickRecyclerVB<MDebugKCrashK, DebugkItemCrashkFileBinding>(
                         _dataSets,
                         R.layout.debugk_item_crashk_file,
                         BR.itemDebugKCrashK
                 ) { holder, itemData, _, _ ->
-                    holder.vb.debugkCrashkFileShare.setOnClickListener {
+                    holder.vdb.debugkCrashkFileShare.setOnClickListener {
                         val intent = Intent(CIntent.ACTION_SEND)
                         intent.putExtra("subject", "")
                         intent.putExtra("body", "")
@@ -60,6 +60,6 @@ class DebugKLogKActivity : BaseActivityVB<DebugkActivityLogkBinding>() {
                         startActivity(intent.createChooser("分享Log 日志文件"))
                     }
                 }
-        vb.debugkLogkRecycler.adapter = adapterKRecycler
+        vdb.debugkLogkRecycler.adapter = adapterKRecycler
     }
 }

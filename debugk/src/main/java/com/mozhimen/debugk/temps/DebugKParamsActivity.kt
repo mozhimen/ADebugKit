@@ -3,7 +3,7 @@ package com.mozhimen.debugk.temps
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.manifestk.permission.ManifestKPermission
@@ -18,7 +18,7 @@ import com.mozhimen.debugk.mos.MDebugKMethod
 import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
 
 @APermissionCheck(CPermission.CAMERA)
-class DebugKParamsActivity : BaseActivityVB<DebugkActivityParamsBinding>() {
+class DebugKParamsActivity : BaseActivityVDB<DebugkActivityParamsBinding>() {
     private val _debugParams = arrayOf(DebugKParams::class.java)
 
     override fun initData(savedInstanceState: Bundle?) {
@@ -34,7 +34,7 @@ class DebugKParamsActivity : BaseActivityVB<DebugkActivityParamsBinding>() {
     override fun initView(savedInstanceState: Bundle?) {
         val itemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         itemDecoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
-        vb.debugkParamsRecycler.addItemDecoration(itemDecoration)
+        vdb.debugkParamsRecycler.addItemDecoration(itemDecoration)
 
         val params = mutableListOf<MDebugKMethod>()
         val size = _debugParams.size
@@ -56,8 +56,8 @@ class DebugKParamsActivity : BaseActivityVB<DebugkActivityParamsBinding>() {
             }
         }
 
-        vb.debugkParamsRecycler.layoutManager = LinearLayoutManager(this)
-        vb.debugkParamsRecycler.adapter = AdapterKQuickRecyclerVB<MDebugKMethod, DebugkDialogItemBinding>(
+        vdb.debugkParamsRecycler.layoutManager = LinearLayoutManager(this)
+        vdb.debugkParamsRecycler.adapter = AdapterKQuickRecyclerVB<MDebugKMethod, DebugkDialogItemBinding>(
             params,
             R.layout.debugk_item_params,
             BR.itemDebugKParams

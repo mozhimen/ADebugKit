@@ -5,11 +5,10 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.basick.elemk.android.content.cons.CIntent
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PHONE_STATE
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
-import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.content.createChooser
 import com.mozhimen.basick.utilk.java.io.UtilKFileFormat
@@ -28,7 +27,7 @@ import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
  * @Date 2022/5/25 23:00
  * @Version 1.0
  */
-class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
+class DebugKCrashKActivity : BaseActivityVDB<DebugkActivityCrashkBinding>() {
     private val _dataSets = ArrayList<MDebugKCrashK>()
 
     @OptIn(OApiInit_InApplication::class, OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
@@ -39,15 +38,15 @@ class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
 
         val decoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         decoration.setDrawable(UtilKRes.gainDrawable(R.drawable.debugk_crashk_divider)!!)
-        vb.debugkCrashkRecycler.addItemDecoration(decoration)
+        vdb.debugkCrashkRecycler.addItemDecoration(decoration)
 
-        vb.debugkCrashkRecycler.layoutManager = LinearLayoutManager(this)
+        vdb.debugkCrashkRecycler.layoutManager = LinearLayoutManager(this)
         val adapterKRecycler = AdapterKQuickRecyclerVB<MDebugKCrashK, DebugkItemCrashkFileBinding>(
                 _dataSets,
                 R.layout.debugk_item_crashk_file,
                 BR.itemDebugKCrashK
         ) { holder, itemData, _, _ ->
-            holder.vb.debugkCrashkFileShare.setOnClickListener {
+            holder.vdb.debugkCrashkFileShare.setOnClickListener {
                 val intent = Intent(CIntent.ACTION_SEND)
                 intent.putExtra("subject", "")
                 intent.putExtra("body", "")
@@ -62,6 +61,6 @@ class DebugKCrashKActivity : BaseActivityVB<DebugkActivityCrashkBinding>() {
                 startActivity(intent.createChooser("分享Crash 日志文件"))
             }
         }
-        vb.debugkCrashkRecycler.adapter = adapterKRecycler
+        vdb.debugkCrashkRecycler.adapter = adapterKRecycler
     }
 }

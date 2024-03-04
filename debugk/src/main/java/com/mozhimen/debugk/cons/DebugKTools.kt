@@ -48,6 +48,6 @@ class DebugKTools {
 
     @ADebugKTool("打开/关闭暗黑模式", desc = "打开暗黑模式在夜间使用更温和")
     fun toggleMode(activity: Activity) {
-        UtilKAppCompatDelegate.toggleMode()
+        UtilKAppCompatDelegate.toggleUiMode()
     }
 }

@@ -3,7 +3,7 @@ package com.mozhimen.debugk.bases
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.lintk.optins.permission.OPermission_INTERNET
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
@@ -21,7 +21,7 @@ import com.mozhimen.uicorek.layoutk.tab.top.mos.MTabTop
  * @Date 2022/11/16 15:25
  * @Version 1.0
  */
-abstract class BaseDebugKTabKTopActivity : BaseActivityVB<DebugkActivityTabkTopBinding>() {
+abstract class BaseDebugKTabKTopActivity : BaseActivityVDB<DebugkActivityTabkTopBinding>() {
     private val _tabList: ArrayList<DebugKUITabTopItem> by lazy { getTabList() }
 
     abstract fun getTabList(): ArrayList<DebugKUITabTopItem>
@@ -32,20 +32,20 @@ abstract class BaseDebugKTabKTopActivity : BaseActivityVB<DebugkActivityTabkTopB
 
     @OptIn(OPermission_INTERNET::class)
     override fun initView(savedInstanceState: Bundle?) {
-        vb.debugkUiTabTop.setTabTopHeight(20f.dp2px())
-        vb.debugkUiTabTop.inflateTabItem(_tabList)
-        vb.debugkUiTabTop.addTabItemSelectedListener(object : ITabSelectedListener<MTabTop> {
+        vdb.debugkUiTabTop.setTabTopHeight(20f.dp2px())
+        vdb.debugkUiTabTop.inflateTabItem(_tabList)
+        vdb.debugkUiTabTop.addTabItemSelectedListener(object : ITabSelectedListener<MTabTop> {
             override fun onTabItemSelected(index: Int, prevItem: MTabTop?, currentItem: MTabTop) {
                 showLayoutView((currentItem as DebugKUITabTopItem).viewId)
             }
         })
-        vb.debugkUiTabTop.defaultSelected(_tabList[0])
+        vdb.debugkUiTabTop.defaultSelected(_tabList[0])
     }
 
     private fun showLayoutView(viewId: Int) {
-        vb.debugkUiLayoutContainer.removeAllViews()
+        vdb.debugkUiLayoutContainer.removeAllViews()
         val view = LayoutInflater.from(this).inflate(viewId, null)
-        vb.debugkUiLayoutContainer.addView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+        vdb.debugkUiLayoutContainer.addView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
     }
 
     data class DebugKUITabTopItem(
