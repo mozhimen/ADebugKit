@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.mozhimen.uicorek.layoutk.navbar.LayoutKNavBar
+        <com.mozhimen.xmlk.layoutk.navbar.LayoutKNavBar
             android:id="@+id/debugk_params_navbar"
             android:layout_width="match_parent"
             android:layout_height="48dp"

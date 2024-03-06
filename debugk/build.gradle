@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.mozhimen.debugk'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 19
@@ -45,7 +45,7 @@ android {
 dependencies {
 
     implementation project(':SwiftKit:basick')
-    implementation project(':SwiftKit:uicorek')
+    implementation project(':SwiftKit:xmlk')
 
     //crash
     implementation project(':ACrashKit:crashk')
@@ -61,10 +61,10 @@ dependencies {
     implementation project(':AAdaptKit:adaptk_systembar')
 
     //ui
-    implementation project(':AUICoreKit:layoutk_tab')
-    implementation project(':AUICoreKit:recyclerk')
-    implementation project(':AUICoreKit:layoutk')
-    implementation project(':AUICoreKit:vhk')
+    implementation project(':AXmlKit:layoutk_tab')
+    implementation project(':AXmlKit:recyclerk')
+    implementation project(':AXmlKit:layoutk')
+    implementation project(':AXmlKit:vhk')
 
     //test
     testImplementation 'junit:junit:4.13.2'

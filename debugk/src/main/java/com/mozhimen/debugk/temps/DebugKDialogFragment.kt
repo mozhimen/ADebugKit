@@ -20,7 +20,7 @@ import com.mozhimen.debugk.databinding.DebugkDialogItemBinding
 import com.mozhimen.debugk.cons.DebugKTools
 import com.mozhimen.debugk.annors.ADebugKTool
 import com.mozhimen.debugk.mos.MDebugKMethod
-import com.mozhimen.uicorek.recyclerk.quick.AdapterKQuickRecyclerVB
+import com.mozhimen.xmlk.recyclerk.quick.AdapterKQuickRecyclerVB
 
 /**
  * @ClassName DebugKDialogFragment

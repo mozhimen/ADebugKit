@@ -10,8 +10,8 @@ import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.util.dp2px
 import com.mozhimen.debugk.databinding.DebugkActivityTabkTopBinding
-import com.mozhimen.uicorek.layoutk.tab.commons.ITabSelectedListener
-import com.mozhimen.uicorek.layoutk.tab.top.mos.MTabTop
+import com.mozhimen.xmlk.layoutk.tab.commons.ITabSelectedListener
+import com.mozhimen.xmlk.layoutk.tab.top.mos.MTabTop
 
 
 /**
@@ -51,5 +51,5 @@ abstract class BaseDebugKTabKTopActivity : BaseActivityVDB<DebugkActivityTabkTop
     data class DebugKUITabTopItem(
         val tabName: String,
         val viewId: Int
-    ) : MTabTop(tabName, UtilKRes.gainColor(com.mozhimen.uicorek.R.color.cok_blue_287ff1), UtilKRes.gainColor(com.mozhimen.uicorek.R.color.cok_blue_287ff1))
+    ) : MTabTop(tabName, UtilKRes.gainColor(com.mozhimen.xmlk.R.color.cok_blue_287ff1), UtilKRes.gainColor(com.mozhimen.xmlk.R.color.cok_blue_287ff1))
 }

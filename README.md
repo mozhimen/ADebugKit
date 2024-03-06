@@ -24,13 +24,13 @@ include ':AOptKit_fps:optk_fps'
 include ':ANavigateKit_Navigation'
 project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
 include ':ANavigateKit_Navigation:navigatek_navigation'
-//AUICoreKit
-include ':AUICoreKit'
-project(':AUICoreKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AUICoreKit")
-include ':AUICoreKit:layoutk_tab'
-include ':AUICoreKit:recyclerk'
-include ':AUICoreKit:layoutk'
-include ':AUICoreKit:vhk'
+//AXmlKit
+include ':AXmlKit'
+project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
+include ':AXmlKit:layoutk_tab'
+include ':AXmlKit:recyclerk'
+include ':AXmlKit:layoutk'
+include ':AXmlKit:vhk'
 ```
 - 本地引入debugk_leakcanary
 ```

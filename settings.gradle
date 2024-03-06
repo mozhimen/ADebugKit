@@ -25,11 +25,15 @@ include ':debugk'
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':SwiftKit:uicorek'
+include ':SwiftKit:xmlk'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
 include ':ACrashKit:crashk'
+//ACrashKit_Native
+include ':ACrashKit_Native'
+project(':ACrashKit_Native').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit_Native")
+include ':ACrashKit_Native:crashk_native'
 //ALogKit
 include ':ALogKit'
 project(':ALogKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ALogKit")
@@ -38,13 +42,13 @@ include ':ALogKit:logk'
 include ':AOptKit_fps'
 project(':AOptKit_fps').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit_fps")
 include ':AOptKit_fps:optk_fps'
-//AUICoreKit
-include ':AUICoreKit'
-project(':AUICoreKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AUICoreKit")
-include ':AUICoreKit:layoutk_tab'
-include ':AUICoreKit:recyclerk'
-include ':AUICoreKit:vhk'
-include ':AUICoreKit:layoutk'
+//AXmlKit
+include ':AXmlKit'
+project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
+include ':AXmlKit:layoutk_tab'
+include ':AXmlKit:recyclerk'
+include ':AXmlKit:vhk'
+include ':AXmlKit:layoutk'
 //ANavigateK_Navigation
 include ':ANavigateKit_Navigation'
 project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
@@ -54,3 +58,7 @@ include ':debugk_leakcanary'
 include ':AAdaptKit'
 project(':AAdaptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAdaptKit")
 include ':AAdaptKit:adaptk_systembar'
+//AImageKit
+include ':AImageKit'
+project(':AImageKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AImageKit")
+include ':AImageKit:imagek_glide'
