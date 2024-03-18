@@ -2,7 +2,7 @@ package com.mozhimen.debugk
 
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
-import com.mozhimen.basick.utilk.android.util.et
+import com.mozhimen.basick.utilk.android.util.e
 import com.mozhimen.basick.utilk.commons.IUtilK
 import com.mozhimen.debugk.temps.DebugKDialogFragment
 
@@ -20,7 +20,7 @@ object DebugK : IUtilK {
             target.show(fragmentManager, "debugk_dialog")
         } catch (e: Exception) {
             e.printStackTrace()
-            e.message?.et(TAG)
+            e.message?.e(TAG)
         }
     }
 }

@@ -5,7 +5,7 @@ package com.mozhimen.debugk.bases//package com.mozhimen.debugk.bases
 //import androidx.navigation.NavController
 //import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVBVM
 //import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
-//import com.mozhimen.basick.utilk.android.util.et
+//import com.mozhimen.basick.utilk.android.util.e
 //import com.mozhimen.componentk.navigatek.NavigateK
 //import com.mozhimen.debugk.R
 //import com.mozhimen.debugk.databinding.DebugkActivityNavigatekBinding
@@ -42,7 +42,7 @@ package com.mozhimen.debugk.bases//package com.mozhimen.debugk.bases
 //            if (it != null && _navController.findDestination(it) != null && _navController.currentDestination?.id != it) {
 //                _currentItemId = it
 //            } else {
-//                "please add this destination to list ".et(TAG)
+//                "please add this destination to list ".e(TAG)
 //            }
 //        }
 //    }
