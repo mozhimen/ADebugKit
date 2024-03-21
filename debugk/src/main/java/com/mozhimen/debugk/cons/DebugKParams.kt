@@ -85,7 +85,7 @@ class DebugKParams {
     fun buildTags(): String = UtilKBuild.getTags() ?: CBuild.UNKNOWN
 
     @ADebugKParams("构建SDK版本")
-    fun buildVersionSDKStr(): String = UtilKBuild.getVersionSDKStr()
+    fun buildVersionSDKStr(): String = UtilKBuild.getVersionSDK()
 
     @ADebugKParams("构建Release版本号")
     fun buildVersionRelease(): String = UtilKBuild.getVersionRelease()
