@@ -9,7 +9,7 @@ import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivi
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PHONE_STATE
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
-import com.mozhimen.basick.utilk.android.content.UtilKRes
+import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.basick.utilk.android.content.createChooser
 import com.mozhimen.basick.utilk.java.io.UtilKFileFormat
 import com.mozhimen.debugk.R

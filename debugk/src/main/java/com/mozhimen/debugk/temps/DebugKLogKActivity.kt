@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.basick.elemk.android.content.cons.CIntent
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
-import com.mozhimen.basick.utilk.android.content.UtilKRes
+import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.basick.utilk.android.content.createChooser
 import com.mozhimen.basick.utilk.java.io.UtilKFileFormat
 import com.mozhimen.debugk.BR

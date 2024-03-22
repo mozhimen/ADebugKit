@@ -5,9 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.basick.lintk.optins.permission.OPermission_INTERNET
-import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
-import com.mozhimen.basick.utilk.android.content.UtilKRes
+import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.basick.utilk.android.util.dp2px
 import com.mozhimen.debugk.databinding.DebugkActivityTabkTopBinding
 import com.mozhimen.xmlk.layoutk.tab.commons.ITabSelectedListener

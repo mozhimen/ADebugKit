@@ -6,10 +6,10 @@ import androidx.annotation.RequiresApi
 import com.mozhimen.basick.elemk.android.os.cons.CBuild
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PHONE_STATE
 import com.mozhimen.basick.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
-import com.mozhimen.basick.utilk.android.hardware.UtilKDevice
+import com.mozhimen.basick.utilk.wrapper.UtilKDevice
 import com.mozhimen.basick.utilk.kotlin.boolean2str
-import com.mozhimen.basick.utilk.android.view.UtilKScreen
-import com.mozhimen.basick.utilk.android.net.UtilKNet
+import com.mozhimen.basick.utilk.wrapper.UtilKScreen
+import com.mozhimen.basick.utilk.wrapper.UtilKNet
 import com.mozhimen.basick.utilk.android.os.UtilKBuild
 import com.mozhimen.basick.utilk.android.os.UtilKBuildVersion
 import com.mozhimen.basick.utilk.android.view.UtilKNavigationBar
