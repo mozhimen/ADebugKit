@@ -2,6 +2,7 @@ package com.mozhimen.debugk.test
 
 import android.os.Bundle
 import android.util.Log
+import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
@@ -39,7 +40,7 @@ class DebugKActivity : BaseActivityVDB<ActivityDebugkBinding>() {
 
     fun toggleDebugDialog() {
         if (BuildConfig.DEBUG) {
-            Log.d(TAG, "toggleDebugDialog: open")
+            UtilKLogWrapper.d(TAG, "toggleDebugDialog: open")
             DebugK.toggleDialog(this.supportFragmentManager)
         }
     }
