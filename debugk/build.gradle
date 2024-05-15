@@ -55,10 +55,10 @@ dependencies {
     implementation project(':ALogKit:logk')
 
     //opt
-    implementation project(':AOptKit_fps:optk_fps')
+    implementation project(':AOptKit:optk_fps')
 
     //navigate
-    implementation project(':ANavigateKit_Navigation:navigatek_navigation')
+    implementation project(':ANavigateKit:navigatek_navigation')
     implementation project(':AAdaptKit:adaptk_systembar')
 
     //ui
