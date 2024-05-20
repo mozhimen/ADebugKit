@@ -15,7 +15,7 @@ import com.mozhimen.debugk.databinding.DebugkDialogItemBinding
 import com.mozhimen.debugk.cons.DebugKParams
 import com.mozhimen.debugk.annors.ADebugKParams
 import com.mozhimen.debugk.mos.MDebugKMethod
-import com.mozhimen.xmlk.recyclerk.quick.AdapterKQuickRecyclerVB
+import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
 
 @APermissionCheck(CPermission.CAMERA)
 class DebugKParamsActivity : BaseActivityVDB<DebugkActivityParamsBinding>() {
@@ -57,7 +57,7 @@ class DebugKParamsActivity : BaseActivityVDB<DebugkActivityParamsBinding>() {
         }
 
         vdb.debugkParamsRecycler.layoutManager = LinearLayoutManager(this)
-        vdb.debugkParamsRecycler.adapter = AdapterKQuickRecyclerVB<MDebugKMethod, DebugkDialogItemBinding>(
+        vdb.debugkParamsRecycler.adapter = RecyclerKQuickAdapterVDB<MDebugKMethod, DebugkDialogItemBinding>(
             params,
             R.layout.debugk_item_params,
             BR.itemDebugKParams
