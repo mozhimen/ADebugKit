@@ -21,6 +21,7 @@ dependencyResolutionManagement {
 rootProject.name = "ADebugKit"
 include ':app'
 include ':debugk'
+include ':debugk_leakcanary'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
@@ -30,18 +31,15 @@ include ':SwiftKit:xmlk'
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
 include ':ACrashKit:crashk'
-//ACrashKit_Native
-include ':ACrashKit_Native'
-project(':ACrashKit_Native').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit_Native")
-include ':ACrashKit_Native:crashk_native'
+include ':ACrashKit:crashk_native'
 //ALogKit
 include ':ALogKit'
 project(':ALogKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ALogKit")
 include ':ALogKit:logk'
-//AOptKit_fps
-include ':AOptKit_fps'
-project(':AOptKit_fps').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit_fps")
-include ':AOptKit_fps:optk_fps'
+//AOptKit
+include ':AOptKit'
+project(':AOptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit")
+include ':AOptKit:optk_fps'
 //AXmlKit
 include ':AXmlKit'
 project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
@@ -50,10 +48,9 @@ include ':AXmlKit:recyclerk'
 include ':AXmlKit:vhk'
 include ':AXmlKit:layoutk'
 //ANavigateK_Navigation
-include ':ANavigateKit_Navigation'
-project(':ANavigateKit_Navigation').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit_Navigation")
-include ':ANavigateKit_Navigation:navigatek_navigation'
-include ':debugk_leakcanary'
+include ':ANavigateKit'
+project(':ANavigateKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit")
+include ':ANavigateKit:navigatek_navigation'
 //AAdaptKit
 include ':AAdaptKit'
 project(':AAdaptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAdaptKit")

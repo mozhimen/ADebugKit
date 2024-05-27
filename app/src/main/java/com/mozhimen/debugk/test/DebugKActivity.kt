@@ -1,19 +1,22 @@
 package com.mozhimen.debugk.test
 
 import android.os.Bundle
-import android.util.Log
 import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
 import com.mozhimen.basick.elemk.android.view.bases.BaseFlingSimpleOnGestureCallback
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.basick.utilk.android.content.startContext
 import com.mozhimen.debugk.DebugK
+import com.mozhimen.debugk.temps.DebugKParamsActivity
 import com.mozhimen.debugk.test.databinding.ActivityDebugkBinding
 
 class DebugKActivity : BaseActivityVDB<ActivityDebugkBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
+        startContext<DebugKParamsActivity>()
+F
         vdb.debugkTxt.setOnClickListener {
             toggleDebugDialog()
         }
