@@ -8,6 +8,7 @@ import com.mozhimen.basick.lintk.optins.permission.OPermission_INTERNET
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.basick.utilk.android.util.dp2px
+import com.mozhimen.basick.utilk.kotlin.UtilKLazyJVM.lazy_ofNone
 import com.mozhimen.debugk.databinding.DebugkActivityTabkTopBinding
 import com.mozhimen.xmlk.layoutk.tab.commons.ITabSelectedListener
 import com.mozhimen.xmlk.layoutk.tab.top.mos.MTabTop
@@ -21,7 +22,7 @@ import com.mozhimen.xmlk.layoutk.tab.top.mos.MTabTop
  * @Version 1.0
  */
 abstract class BaseDebugKTabKTopActivity : BaseActivityVDB<DebugkActivityTabkTopBinding>() {
-    private val _tabList: ArrayList<DebugKUITabTopItem> by lazy { getTabList() }
+    private val _tabList: ArrayList<DebugKUITabTopItem> by lazy_ofNone { getTabList() }
 
     abstract fun getTabList(): ArrayList<DebugKUITabTopItem>
 

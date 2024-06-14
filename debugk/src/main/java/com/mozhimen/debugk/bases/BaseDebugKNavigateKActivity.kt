@@ -19,7 +19,7 @@ package com.mozhimen.debugk.bases//package com.mozhimen.debugk.bases
 // * @Version 1.0
 // */
 //abstract class BaseDebugKNavigateKActivity : BaseActivityVBVM<DebugkActivityNavigatekBinding, BaseDebugKNavigateKViewModel>() {
-//    private val _fragments by lazy { getFragments() }
+//    private val _fragments by lazy_ofNone { getFragments() }
 //
 //    private lateinit var _navController: NavController
 //    private var _currentItemId: Int = 0

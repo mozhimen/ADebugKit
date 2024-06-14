@@ -2,6 +2,7 @@ package com.mozhimen.debugk.cons
 
 import android.app.Activity
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
+import com.mozhimen.basick.lintk.optins.permission.OPermission_SYSTEM_ALERT_WINDOW
 import com.mozhimen.basick.manifestk.cons.CPermission
 import com.mozhimen.basick.utilk.android.content.startContext
 import com.mozhimen.basick.utilk.androidx.appcompat.UtilKAppCompatDelegate
@@ -41,6 +42,7 @@ class DebugKTools {
         activity.startContext<DebugKLogKActivity>()
     }
 
+    @OptIn(OPermission_SYSTEM_ALERT_WINDOW::class)
     @ADebugKTool("打开/关闭Fps", desc = "打开后可以查看页面实时的FPS")
     fun toggleFps(activity: Activity) {
         OptKFps.instance.toggle()
