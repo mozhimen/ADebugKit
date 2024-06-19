@@ -94,7 +94,7 @@ class DebugKParams {
     fun buildVersionCodeName(): String = UtilKBuild.getVersionCodeName()
 
     @ADebugKParams("构建显示ID")
-    fun buildDisplayId(): String = UtilKBuild.getDisplayId()
+    fun buildDisplay(): String = UtilKBuild.getDisplay()
 
     @ADebugKParams("构建变更列表号")
     fun buildId(): String = UtilKBuild.getId()
