@@ -1,11 +1,11 @@
 package com.mozhimen.debugk.cons
 
 import android.app.Activity
-import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
-import com.mozhimen.basick.lintk.optins.permission.OPermission_SYSTEM_ALERT_WINDOW
-import com.mozhimen.basick.manifestk.cons.CPermission
-import com.mozhimen.basick.utilk.android.content.startContext
-import com.mozhimen.basick.utilk.androidx.appcompat.UtilKAppCompatDelegate
+import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.permission.OPermission_SYSTEM_ALERT_WINDOW
+import com.mozhimen.kotlin.elemk.android.cons.CPermission
+import com.mozhimen.kotlin.utilk.android.content.startContext
+import com.mozhimen.kotlin.utilk.androidx.appcompat.UtilKAppCompatDelegate
 import com.mozhimen.debugk.annors.ADebugKTool
 import com.mozhimen.debugk.temps.DebugKCrashKActivity
 import com.mozhimen.debugk.temps.DebugKLogKActivity

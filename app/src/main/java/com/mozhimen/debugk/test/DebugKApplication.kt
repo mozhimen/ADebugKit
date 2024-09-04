@@ -1,7 +1,7 @@
 package com.mozhimen.debugk.test
 
-import com.mozhimen.basick.elemk.android.app.bases.BaseApplication
-import com.mozhimen.basick.lintk.optins.OApiMultiDex_InApplication
+import com.mozhimen.stackk.bases.BaseApplication
+import com.mozhimen.kotlin.lintk.optins.OApiMultiDex_InApplication
 
 /**
  * @ClassName DebugKApplication

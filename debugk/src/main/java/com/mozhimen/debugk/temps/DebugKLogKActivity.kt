@@ -4,19 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mozhimen.basick.elemk.android.content.cons.CIntent
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
-import com.mozhimen.basick.utilk.wrapper.UtilKRes
-import com.mozhimen.basick.utilk.android.content.createChooser
-import com.mozhimen.basick.utilk.java.io.UtilKFileFormat
+import com.mozhimen.kotlin.elemk.android.content.cons.CIntent
+import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
+import com.mozhimen.kotlin.utilk.android.content.createChooser
+import com.mozhimen.kotlin.utilk.java.io.UtilKFileFormat
 import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.R
 import com.mozhimen.debugk.databinding.DebugkActivityLogkBinding
 import com.mozhimen.debugk.databinding.DebugkItemCrashkFileBinding
 import com.mozhimen.debugk.mos.MDebugKCrashK
 import com.mozhimen.logk.LogKMgr
-import com.mozhimen.logk.temps.printer.LogKPrinterFile
+import com.mozhimen.logk.file.LogKPrinterFile
+import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
 import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
 
 /**

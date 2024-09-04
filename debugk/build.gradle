@@ -45,7 +45,7 @@ android {
 
 dependencies {
 
-    implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:mvvmk')
     implementation project(':SwiftKit:xmlk')
 
     //crash
@@ -53,6 +53,7 @@ dependencies {
 
     //log
     implementation project(':ALogKit:logk')
+    implementation project(':ALogKit:logk_file')
 
     //opt
     implementation project(':AOptKit:optk_fps')

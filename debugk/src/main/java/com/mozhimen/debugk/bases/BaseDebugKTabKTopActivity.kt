@@ -3,12 +3,12 @@ package com.mozhimen.debugk.bases
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.basick.lintk.optins.permission.OPermission_INTERNET
+import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
+import com.mozhimen.kotlin.lintk.optins.permission.OPermission_INTERNET
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
-import com.mozhimen.basick.utilk.wrapper.UtilKRes
-import com.mozhimen.basick.utilk.android.util.dp2px
-import com.mozhimen.basick.utilk.kotlin.UtilKLazyJVM.lazy_ofNone
+import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
+import com.mozhimen.kotlin.utilk.android.util.dp2px
+import com.mozhimen.kotlin.utilk.kotlin.UtilKLazyJVM.lazy_ofNone
 import com.mozhimen.debugk.databinding.DebugkActivityTabkTopBinding
 import com.mozhimen.xmlk.layoutk.tab.commons.ITabSelectedListener
 import com.mozhimen.xmlk.layoutk.tab.top.mos.MTabTop
