@@ -3,7 +3,7 @@ package com.mozhimen.debugk.bases
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
+import com.mozhimen.bindk.bases.activity.databinding.BaseActivityVDB
 import com.mozhimen.kotlin.lintk.optins.permission.OPermission_INTERNET
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.kotlin.utilk.wrapper.UtilKRes

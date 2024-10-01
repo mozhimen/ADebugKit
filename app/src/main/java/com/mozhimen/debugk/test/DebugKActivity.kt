@@ -6,7 +6,7 @@ import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
 import com.mozhimen.kotlin.elemk.android.view.bases.BaseFlingSimpleOnGestureCallback
-import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
+import com.mozhimen.bindk.bases.activity.databinding.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.content.startContext
 import com.mozhimen.debugk.DebugK
 import com.mozhimen.debugk.temps.DebugKParamsActivity
