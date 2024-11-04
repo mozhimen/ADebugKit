@@ -17,7 +17,7 @@ import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.databinding.DebugkActivityCrashkBinding
 import com.mozhimen.debugk.databinding.DebugkItemCrashkFileBinding
 import com.mozhimen.debugk.mos.MDebugKCrashK
-import com.mozhimen.crashk.CrashKMgr
+import com.mozhimen.crashk.CrashKJavaMgr
 import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
 
 /**
@@ -32,7 +32,7 @@ class DebugKCrashKActivity : BaseActivityVDB<DebugkActivityCrashkBinding>() {
 
     @OptIn(OApiInit_InApplication::class, OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
     override fun initView(savedInstanceState: Bundle?) {
-        val crashFiles = CrashKMgr.instance.getCrashFiles()
+        val crashFiles = CrashKJavaMgr.instance.getCrashFiles()
 
         for (file in crashFiles) _dataSets.add(MDebugKCrashK(file.name, file))
 

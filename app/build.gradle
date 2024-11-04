@@ -27,12 +27,12 @@ android {
     }
     buildTypes {
         debug {
-            signingConfig signingConfigs.signingConfig
+//            signingConfig signingConfigs.signingConfig
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            signingConfig signingConfigs.signingConfig
+//            signingConfig signingConfigs.signingConfig
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -48,11 +48,16 @@ android {
         dataBinding true
         buildConfig true
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
 
-    implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:bindk')
+    implementation project(':AStackKit:stackk')
     implementation project(':debugk')
 
     testImplementation 'junit:junit:4.13.2'

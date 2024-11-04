@@ -22,20 +22,40 @@ rootProject.name = "ADebugKit"
 include ':app'
 include ':debugk'
 include ':debugk_leakcanary'
+//ALibKit_Squareup
+include ':ALibKit_Squareup'
+project(':ALibKit_Squareup').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Squareup")
+include ':ALibKit_Squareup:moshi'
+//ALibKit_Jetpack
+include ':ALibKit_Jetpack'
+project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
+include ':ALibKit_Jetpack:navigation_ui'
+include ':ALibKit_Jetpack:navigation_fragment'
+include ':ALibKit_Jetpack:navigation_common'
+//AStackKit
+include ':AStackKit'
+project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
+include ':AStackKit:stackk'
+include ':AStackKit:stackk_basic'
+include ':AStackKit:stackk_callback'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
 include ':SwiftKit:xmlk'
+include ':SwiftKit:bindk'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
-include ':ACrashKit:crashk'
+include ':ACrashKit:crashk_basic'
+include ':ACrashKit:crashk_java'
 include ':ACrashKit:crashk_native'
 //ALogKit
 include ':ALogKit'
 project(':ALogKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ALogKit")
+include ':ALogKit:basic'
 include ':ALogKit:logk'
+include ':ALogKit:logk_file'
 //AOptKit
 include ':AOptKit'
 project(':AOptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit")
@@ -59,3 +79,12 @@ include ':AAdaptKit:adaptk_systembar'
 include ':AImageKit'
 project(':AImageKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AImageKit")
 include ':AImageKit:imagek_glide'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:utilk_android'
+include ':KUtilKit:utilk_kotlin'
+//ASerialKit
+include ':ASerialKit'
+project(':ASerialKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASerialKit")
+include ':ASerialKit:serialk_moshi'

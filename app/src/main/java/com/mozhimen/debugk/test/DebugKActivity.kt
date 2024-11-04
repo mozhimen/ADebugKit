@@ -5,8 +5,8 @@ import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 import android.view.GestureDetector
 import android.view.KeyEvent
 import android.view.MotionEvent
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.elemk.android.view.bases.BaseFlingSimpleOnGestureCallback
-import com.mozhimen.bindk.bases.activity.databinding.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.content.startContext
 import com.mozhimen.debugk.DebugK
 import com.mozhimen.debugk.temps.DebugKParamsActivity
@@ -16,7 +16,7 @@ class DebugKActivity : BaseActivityVDB<ActivityDebugkBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
         startContext<DebugKParamsActivity>()
-F
+
         vdb.debugkTxt.setOnClickListener {
             toggleDebugDialog()
         }

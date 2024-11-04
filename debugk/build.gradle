@@ -44,12 +44,11 @@ android {
 }
 
 dependencies {
-
     implementation project(':SwiftKit:bindk')
     implementation project(':SwiftKit:xmlk')
 
     //crash
-    implementation project(':ACrashKit:crashk')
+    implementation project(':ACrashKit:crashk_java')
 
     //log
     implementation project(':ALogKit:logk')
