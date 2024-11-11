@@ -17,7 +17,7 @@ import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.databinding.DebugkActivityCrashkBinding
 import com.mozhimen.debugk.databinding.DebugkItemCrashkFileBinding
 import com.mozhimen.debugk.mos.MDebugKCrashK
-import com.mozhimen.crashk.CrashKJavaMgr
+import com.mozhimen.crashk.java.CrashKJavaMgr
 import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
 
 /**
