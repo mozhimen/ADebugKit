@@ -79,76 +79,76 @@ class DebugKParams {
     fun buildConfigTime(): String = BuildConfig.BUILD_TIME
 
     @ADebugKParams("构建类型")
-    fun buildType(): String = UtilKBuild.getType()
+    fun buildType(): String = UtilKBuild.get_TYPE()
 
     @ADebugKParams("构建标签聚合")
-    fun buildTags(): String = UtilKBuild.getTags() ?: CBuild.UNKNOWN
+    fun buildTags(): String = UtilKBuild.get_TAGS() ?: CBuild.UNKNOWN
 
     @ADebugKParams("构建SDK版本")
-    fun buildVersionSDKStr(): String = UtilKBuild.getVersionSDK()
+    fun buildVersionSDKStr(): String = UtilKBuildVersion.get_SDK_INT_STR()
 
     @ADebugKParams("构建Release版本号")
-    fun buildVersionRelease(): String = UtilKBuild.getVersionRelease()
+    fun buildVersionRelease(): String = UtilKBuildVersion.get_RELEASE()
 
     @ADebugKParams("构建版本名称")
-    fun buildVersionCodeName(): String = UtilKBuild.getVersionCodeName()
+    fun buildVersionCodeName(): String = UtilKBuildVersion.get_CODENAME()
 
     @ADebugKParams("构建显示ID")
-    fun buildDisplay(): String = UtilKBuild.getDisplay()
+    fun buildDisplay(): String = UtilKBuild.get_DISPLAY()
 
     @ADebugKParams("构建变更列表号")
-    fun buildId(): String = UtilKBuild.getId()
+    fun buildId(): String = UtilKBuild.get_ID()
 
     @ADebugKParams("构建内部Host")
-    fun buildHost(): String = UtilKBuild.getHost()
+    fun buildHost(): String = UtilKBuild.get_HOST()
 
     @ADebugKParams("构建内部构建者")
-    fun buildUser(): String = UtilKBuild.getUser()
+    fun buildUser(): String = UtilKBuild.get_USER()
 
     @ADebugKParams("构建内部时间")
-    fun buildTime(): String = UtilKBuild.getTime()
+    fun buildTime(): String = UtilKBuild.get_TIME()
 
     @ADebugKParams("构建设备名")
-    fun buildProduct(): String = UtilKBuild.getProduct()
+    fun buildProduct(): String = UtilKBuild.get_PRODUCT()
 
     @ADebugKParams("构建设备品牌")
-    fun buildBrand(): String = UtilKBuild.getBrand()
+    fun buildBrand(): String = UtilKBuild.get_BRAND()
 
     @ADebugKParams("构建设备/硬件制造商")
-    fun buildManufacture(): String = UtilKBuild.getManufacture()
+    fun buildManufacture(): String = UtilKBuild.get_MANUFACTURER()
 
     @ADebugKParams("构建无线固件版本")
-    fun buildRadioVersion(): String = UtilKBuild.getRadioVersion()
+    fun buildRadioVersion(): String = UtilKBuild.getRadioVersion() ?: CBuild.UNKNOWN
 
     @ADebugKParams("构建最终用户名")
-    fun buildModel(): String = UtilKBuild.getModel()
+    fun buildModel(): String = UtilKBuild.get_MODEL()
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持架构")
-    fun buildSupportABIs(): String = UtilKBuild.getSupportABIs()
+    fun buildSupportABIs(): String = UtilKBuild.get_SUPPORTED_ABIS_STR()
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持32位架构")
-    fun buildSupport32BitABIs(): String = UtilKBuild.getSupport32BitABIs()
+    fun buildSupport32BitABIs(): String = UtilKBuild.get_SUPPORTED_32_BIT_ABIS_STR()
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @ADebugKParams("构建支持64位架构")
-    fun buildSupport64BitABIs(): String = UtilKBuild.getSupport64BitABIs()
+    fun buildSupport64BitABIs(): String = UtilKBuild.get_SUPPORTED_64_BIT_ABIS_STR()
 
     @ADebugKParams("构建开发板名称")
-    fun buildBoard(): String = UtilKBuild.getBoard()
+    fun buildBoard(): String = UtilKBuild.get_BOARD()
 
     @ADebugKParams("构建工业设计名")
-    fun buildDevice(): String = UtilKBuild.getDevice()
+    fun buildDevice(): String = UtilKBuild.get_DEVICE()
 
     @ADebugKParams("构建硬件名称")
-    fun buildHardware(): String = UtilKBuild.getHardware()
+    fun buildHardware(): String = UtilKBuild.get_HARDWARE()
 
     @ADebugKParams("构建唯一标识版本字符")
-    fun buildFingerPrint(): String = UtilKBuild.getFingerPrint()
+    fun buildFingerPrint(): String = UtilKBuild.get_FINGERPRINT()
 
     @ADebugKParams("构建系统引导加载程序版本")
-    fun buildBootLoader(): String = UtilKBuild.getBootLoader()
+    fun buildBootLoader(): String = UtilKBuild.get_BOOTLOADER()
 
     ////////////////////////////////////////////////////////////////////////////////////////////
 
