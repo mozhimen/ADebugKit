@@ -10,7 +10,7 @@ import java.io.Serializable
  * @Date 2022/5/26 12:57
  * @Version 1.0
  */
-data class MDebugKCrashK(
+data class MDebugKCrashK constructor(
     val name: String,
     val file: File
 ) : Serializable

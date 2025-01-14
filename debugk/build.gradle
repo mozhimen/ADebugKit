@@ -22,7 +22,7 @@ android {
 //            buildConfigField "String", "VERSION_NAME", "\"" + rootProject.android.versionName + "\""// add config.gradle
 //            buildConfigField "int", "VERSION_CODE", "" + rootProject.android.versionCode
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
             buildConfigField("String", "BUILD_TIME", "\"" + buildTime() + "\"")
@@ -44,8 +44,8 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:bindk')
-    implementation project(':SwiftKit:xmlk')
+    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:xmlk')
 
     //crash
     implementation project(':ACrashKit:crashk_java')
