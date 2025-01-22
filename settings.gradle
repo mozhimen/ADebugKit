@@ -21,12 +21,17 @@ dependencyResolutionManagement {
 rootProject.name = "ADebugKit"
 include ':app'
 include ':debugk'
-include ':debugk_leakcanary'
-include ':debugk_blockcanary'
+include ':leakcanary'
+include ':blockcanary'
+//ALibKit_Google
+include ':ALibKit_Google'
+project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
+include ':ALibKit_Google:material'
 //ALibKit_Jetbrains
 include ':ALibKit_Jetbrains'
 project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
 include ':ALibKit_Jetbrains:kotlin_stdlib'
+include ':ALibKit_Jetbrains:kotlinx_coroutines'
 //ALibKit_Squareup
 include ':ALibKit_Squareup'
 project(':ALibKit_Squareup').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Squareup")
@@ -38,12 +43,20 @@ project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKi
 include ':ALibKit_Jetpack:navigation_ui'
 include ':ALibKit_Jetpack:navigation_fragment'
 include ':ALibKit_Jetpack:navigation_common'
+include ':ALibKit_Jetpack:databinding'
+include ':ALibKit_Jetpack:core'
+include ':ALibKit_Jetpack:annotation'
 //AStackKit
 include ':AStackKit'
 project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
 include ':AStackKit:stackk'
-include ':AStackKit:stackk_basic'
-include ':AStackKit:stackk_callback'
+include ':AStackKit:basic'
+include ':AStackKit:callback'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:android'
+include ':KUtilKit:kotlin'
 //ASwiftKit
 include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
@@ -53,19 +66,19 @@ include ':ASwiftKit:bindk'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
-include ':ACrashKit:crashk_basic'
-include ':ACrashKit:crashk_java'
-include ':ACrashKit:crashk_native'
+include ':ACrashKit:basic'
+include ':ACrashKit:java'
+include ':ACrashKit:native'
 //ALogKit
 include ':ALogKit'
 project(':ALogKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ALogKit")
 include ':ALogKit:basic'
 include ':ALogKit:logk'
-include ':ALogKit:logk_file'
+include ':ALogKit:file'
 //AOptKit
 include ':AOptKit'
 project(':AOptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AOptKit")
-include ':AOptKit:optk_fps'
+include ':AOptKit:fps'
 //AXmlKit
 include ':AXmlKit'
 project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
@@ -76,21 +89,16 @@ include ':AXmlKit:layoutk'
 //ANavigateK_Navigation
 include ':ANavigateKit'
 project(':ANavigateKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit")
-include ':ANavigateKit:navigatek_navigation'
+include ':ANavigateKit:navigation'
 //AAdaptKit
 include ':AAdaptKit'
 project(':AAdaptKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAdaptKit")
-include ':AAdaptKit:adaptk_systembar'
+include ':AAdaptKit:systembar'
 //AImageKit
 include ':AImageKit'
 project(':AImageKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AImageKit")
-include ':AImageKit:imagek_glide'
-//KUtilKit
-include ':KUtilKit'
-project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
-include ':KUtilKit:utilk_android'
-include ':KUtilKit:utilk_kotlin'
+include ':AImageKit:glide'
 //ASerialKit
 include ':ASerialKit'
 project(':ASerialKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASerialKit")
-include ':ASerialKit:serialk_moshi'
+include ':ASerialKit:moshi'

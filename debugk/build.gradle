@@ -48,18 +48,18 @@ dependencies {
     implementation project(':ASwiftKit:xmlk')
 
     //crash
-    implementation project(':ACrashKit:crashk_java')
+    implementation project(':ACrashKit:java')
 
     //log
     implementation project(':ALogKit:logk')
-    implementation project(':ALogKit:logk_file')
+    implementation project(':ALogKit:file')
 
     //opt
-    implementation project(':AOptKit:optk_fps')
+    implementation project(':AOptKit:fps')
 
     //navigate
-    implementation project(':ANavigateKit:navigatek_navigation')
-    implementation project(':AAdaptKit:adaptk_systembar')
+    implementation project(':ANavigateKit:navigation')
+    implementation project(':AAdaptKit:systembar')
 
     //ui
     implementation project(':AXmlKit:layoutk_tab')
