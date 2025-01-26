@@ -50,7 +50,7 @@ class DebugKLogKActivity : BaseActivityVDB<DebugkActivityLogkBinding>() {
                         intent.putExtra("subject", "")
                         intent.putExtra("body", "")
 
-                        val uri = UtilKFileFormat.file2uri(itemData.file)
+                        val uri = UtilKFileFormat.file2uri_internal(itemData.file)
                         intent.putExtra(CIntent.EXTRA_STREAM, uri)//添加文件
                         if (itemData.file.name.endsWith(".txt")) {
                             intent.type = "text/plain"//纯文本
