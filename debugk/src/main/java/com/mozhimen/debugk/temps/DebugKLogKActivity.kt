@@ -17,7 +17,7 @@ import com.mozhimen.debugk.mos.MDebugKCrashK
 import com.mozhimen.logk.LogKMgr
 import com.mozhimen.logk.file.LogKPrinterFile
 import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 
 /**
  * @property _dataSets ArrayList<MDebugKCrashK>
@@ -50,7 +50,7 @@ class DebugKLogKActivity : BaseActivityVDB<DebugkActivityLogkBinding>() {
                         intent.putExtra("subject", "")
                         intent.putExtra("body", "")
 
-                        val uri = UtilKFileFormat.file2uri_internal(itemData.file)
+                        val uri = UtilKFileFormat.file2uri(itemData.file)
                         intent.putExtra(CIntent.EXTRA_STREAM, uri)//添加文件
                         if (itemData.file.name.endsWith(".txt")) {
                             intent.type = "text/plain"//纯文本

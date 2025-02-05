@@ -11,7 +11,7 @@ import com.mozhimen.kotlin.utilk.kotlin.UtilKLazyJVM.lazy_ofNone
 import com.mozhimen.debugk.databinding.DebugkActivityTabkTopBinding
 import com.mozhimen.xmlk.layoutk.tab.commons.ITabSelectedListener
 import com.mozhimen.xmlk.layoutk.tab.top.mos.MTabTop
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 
 
 /**

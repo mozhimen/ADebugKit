@@ -56,7 +56,7 @@ android {
 
 dependencies {
 
-    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:uik:databinding')
     implementation project(':AStackKit:stackk')
     implementation project(':debugk')
 

@@ -44,8 +44,9 @@ android {
 }
 
 dependencies {
-    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:uik:databinding')
     implementation project(':ASwiftKit:xmlk')
+    implementation project(':APermissionKit:permissionk')
 
     //crash
     implementation project(':ACrashKit:java')
@@ -62,7 +63,7 @@ dependencies {
     implementation project(':AAdaptKit:systembar')
 
     //ui
-    implementation project(':AXmlKit:layoutk_tab')
+    implementation project(':AXmlKit:layoutk:tab')
     implementation project(':AXmlKit:recyclerk')
     implementation project(':AXmlKit:layoutk')
     implementation project(':AXmlKit:vhk')

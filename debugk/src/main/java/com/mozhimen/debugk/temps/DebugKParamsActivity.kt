@@ -5,8 +5,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.kotlin.elemk.android.cons.CPermission
 import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
-import com.mozhimen.manifestk.permission.ManifestKPermission
-import com.mozhimen.manifestk.permission.annors.APermissionCheck
+import com.mozhimen.permissionk.annors.APermissionCheck
 import com.mozhimen.debugk.BR
 import com.mozhimen.debugk.R
 import com.mozhimen.debugk.databinding.DebugkActivityParamsBinding
@@ -14,14 +13,16 @@ import com.mozhimen.debugk.databinding.DebugkDialogItemBinding
 import com.mozhimen.debugk.cons.DebugKParams
 import com.mozhimen.debugk.annors.ADebugKParams
 import com.mozhimen.debugk.mos.MDebugKMethod
+import com.mozhimen.permissionk.PermissionK
 import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
+
 @APermissionCheck(CPermission.CAMERA)
 class DebugKParamsActivity : BaseActivityVDB<DebugkActivityParamsBinding>() {
     private val _debugParams = arrayOf(DebugKParams::class.java)
 
     override fun initData(savedInstanceState: Bundle?) {
-        ManifestKPermission.requestPermissions(this) {
+        PermissionK.requestPermissions(this) {
             if (it) {
                 super.initData(savedInstanceState)
             } else {

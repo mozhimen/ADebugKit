@@ -62,7 +62,7 @@ include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
-include ':ASwiftKit:bindk'
+include ':ASwiftKit:uik:databinding'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
