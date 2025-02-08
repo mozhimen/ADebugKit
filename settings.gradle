@@ -46,12 +46,6 @@ include ':ALibKit_Jetpack:navigation_common'
 include ':ALibKit_Jetpack:databinding'
 include ':ALibKit_Jetpack:core'
 include ':ALibKit_Jetpack:annotation'
-//AStackKit
-include ':AStackKit'
-project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
-include ':AStackKit:stackk'
-include ':AStackKit:basic'
-include ':AStackKit:callback'
 //KUtilKit
 include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
@@ -63,6 +57,12 @@ project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
 include ':ASwiftKit:uik:databinding'
+//AStackKit
+include ':AStackKit'
+project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
+include ':AStackKit:stackk'
+include ':AStackKit:basic'
+include ':AStackKit:callback'
 //ACrashKit
 include ':ACrashKit'
 project(':ACrashKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACrashKit")
@@ -86,6 +86,7 @@ include ':AXmlKit:layoutk_tab'
 include ':AXmlKit:recyclerk'
 include ':AXmlKit:vhk'
 include ':AXmlKit:layoutk'
+include ':AXmlKit:recyclerk:quick'
 //ANavigateK_Navigation
 include ':ANavigateKit'
 project(':ANavigateKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ANavigateKit")

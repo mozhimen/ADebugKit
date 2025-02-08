@@ -65,7 +65,8 @@ dependencies {
     //ui
     implementation project(':AXmlKit:layoutk:tab')
     implementation project(':AXmlKit:recyclerk')
-    implementation project(':AXmlKit:layoutk')
+    implementation project(':AXmlKit:recyclerk:quick')
+    implementation project(':AXmlKit:layoutk:navbar')
     implementation project(':AXmlKit:vhk')
 
     //test
