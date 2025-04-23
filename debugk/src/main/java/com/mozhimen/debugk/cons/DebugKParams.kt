@@ -15,6 +15,8 @@ import com.mozhimen.kotlin.utilk.android.os.UtilKBuildVersion
 import com.mozhimen.kotlin.utilk.android.view.UtilKNavigationBar
 import com.mozhimen.debugk.BuildConfig
 import com.mozhimen.debugk.annors.ADebugKParams
+import com.mozhimen.kotlin.utilk.android.util.px2dp
+import com.mozhimen.kotlin.utilk.wrapper.UtilKActionBar
 import com.mozhimen.kotlin.utilk.wrapper.UtilKStatusBar
 
 /**
@@ -180,7 +182,13 @@ class DebugKParams {
     fun screenDensityDpi(): String = UtilKScreen.getDensity_ofSysMetrics().toString()
 
     @ADebugKParams("状态栏高度")
-    fun screenStatusBarHeight(): String = UtilKStatusBar.getHeight().toString()
+    fun screenStatusBarHeight(): String = UtilKStatusBar.getHeight_resources().toString()
+
+    @ADebugKParams("活动栏高度")
+    fun screenActionBarHeight(): String = UtilKActionBar.getHeight_resources().toString()
+
+    @ADebugKParams("活动栏高度DP")
+    fun screenActionBarHeightDP(): String = UtilKActionBar.getHeight_resources().px2dp().toString()
 
     @ADebugKParams("导航栏高度")
     fun screenNavigationBarHeight(): String = UtilKNavigationBar.getHeight().toString()

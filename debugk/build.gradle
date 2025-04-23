@@ -46,6 +46,7 @@ android {
 dependencies {
     implementation project(':ASwiftKit:uik:databinding')
     implementation project(':ASwiftKit:xmlk')
+    implementation project(':ASwiftKit:uik')
     implementation project(':APermissionKit:permissionk')
 
     //crash

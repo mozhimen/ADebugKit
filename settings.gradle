@@ -19,10 +19,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ADebugKit"
-include ':app'
-include ':debugk'
-include ':leakcanary'
-include ':blockcanary'
 //ALibKit_Google
 include ':ALibKit_Google'
 project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
@@ -57,6 +53,7 @@ project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
 include ':ASwiftKit:uik:databinding'
+include ':ASwiftKit:uik'
 //AStackKit
 include ':AStackKit'
 project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
@@ -82,10 +79,12 @@ include ':AOptKit:fps'
 //AXmlKit
 include ':AXmlKit'
 project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
-include ':AXmlKit:layoutk_tab'
+include ':AXmlKit:layoutk:tab'
+include ':AXmlKit:layoutk:navbar'
 include ':AXmlKit:recyclerk'
 include ':AXmlKit:vhk'
 include ':AXmlKit:layoutk'
+include ':AXmlKit:basic'
 include ':AXmlKit:recyclerk:quick'
 //ANavigateK_Navigation
 include ':ANavigateKit'
@@ -103,3 +102,12 @@ include ':AImageKit:glide'
 include ':ASerialKit'
 project(':ASerialKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASerialKit")
 include ':ASerialKit:moshi'
+//APermissionKit
+include ':APermissionKit'
+project(':APermissionKit').projectDir = new File("D:\\WorkSpace\\GitHub\\APermissionKit")
+include ':APermissionKit:permissionk'
+//
+include ':app'
+include ':debugk'
+include ':leakcanary'
+include ':blockcanary'
