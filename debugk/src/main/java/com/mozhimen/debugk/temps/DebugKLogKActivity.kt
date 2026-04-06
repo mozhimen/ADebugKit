@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.kotlin.elemk.android.content.cons.CIntent
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
 import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
 import com.mozhimen.kotlin.utilk.android.content.createChooser
 import com.mozhimen.kotlin.utilk.java.io.UtilKFileFormat

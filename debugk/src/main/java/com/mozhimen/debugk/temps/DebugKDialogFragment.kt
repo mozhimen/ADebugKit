@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mozhimen.kotlin.elemk.android.view.cons.CWinMgr
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
 import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
 import com.mozhimen.kotlin.utilk.wrapper.UtilKScreen
 import com.mozhimen.kotlin.utilk.android.view.UtilKContentView

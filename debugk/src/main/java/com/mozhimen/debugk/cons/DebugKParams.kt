@@ -4,8 +4,8 @@ import android.annotation.SuppressLint
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.mozhimen.kotlin.elemk.android.os.cons.CBuild
-import com.mozhimen.kotlin.lintk.optins.permission.OPermission_READ_PHONE_STATE
-import com.mozhimen.kotlin.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
+import com.mozhimen.kotlin.lintk.optins.manifest.uses_permission.OUsesPermission_READ_PHONE_STATE
+import com.mozhimen.kotlin.lintk.optins.manifest.uses_permission.OUsesPermission_READ_PRIVILEGED_PHONE_STATE
 import com.mozhimen.kotlin.utilk.wrapper.UtilKDevice
 import com.mozhimen.kotlin.utilk.kotlin.boolean2str
 import com.mozhimen.kotlin.utilk.wrapper.UtilKScreen
@@ -26,7 +26,7 @@ import com.mozhimen.kotlin.utilk.wrapper.UtilKStatusBar
  * @Date 2022/5/29 10:04
  * @Version 1.0
  */
-@OptIn(OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
+@OptIn(OUsesPermission_READ_PHONE_STATE::class, OUsesPermission_READ_PRIVILEGED_PHONE_STATE::class)
 class DebugKParams {
     /**
      * 设备参数

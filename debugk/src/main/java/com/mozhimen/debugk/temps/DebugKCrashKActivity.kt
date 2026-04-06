@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mozhimen.kotlin.elemk.android.content.cons.CIntent
 import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
-import com.mozhimen.kotlin.lintk.optins.permission.OPermission_READ_PHONE_STATE
-import com.mozhimen.kotlin.lintk.optins.permission.OPermission_READ_PRIVILEGED_PHONE_STATE
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.manifest.uses_permission.OUsesPermission_READ_PHONE_STATE
+import com.mozhimen.kotlin.lintk.optins.manifest.uses_permission.OUsesPermission_READ_PRIVILEGED_PHONE_STATE
 import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
 import com.mozhimen.kotlin.utilk.android.content.createChooser
 import com.mozhimen.kotlin.utilk.java.io.UtilKFileFormat
@@ -30,7 +30,7 @@ import com.mozhimen.xmlk.recyclerk.quick.RecyclerKQuickAdapterVDB
 class DebugKCrashKActivity : BaseActivityVDB<DebugkActivityCrashkBinding>() {
     private val _dataSets = ArrayList<MDebugKCrashK>()
 
-    @OptIn(OApiInit_InApplication::class, OPermission_READ_PHONE_STATE::class, OPermission_READ_PRIVILEGED_PHONE_STATE::class)
+    @OptIn(OApiInit_InApplication::class, OUsesPermission_READ_PHONE_STATE::class, OUsesPermission_READ_PRIVILEGED_PHONE_STATE::class)
     override fun initView(savedInstanceState: Bundle?) {
         val crashFiles = CrashKJavaMgr.instance.getCrashFiles()
 

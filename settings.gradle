@@ -101,7 +101,7 @@ include ':AImageKit:glide'
 //ASerialKit
 include ':ASerialKit'
 project(':ASerialKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASerialKit")
-include ':ASerialKit:moshi'
+include ':ASerialKit:json:moshi'
 //APermissionKit
 include ':APermissionKit'
 project(':APermissionKit').projectDir = new File("D:\\WorkSpace\\GitHub\\APermissionKit")
