@@ -64,11 +64,11 @@ dependencies {
     implementation project(':AAdaptKit:systembar')
 
     //ui
-    implementation project(':AXmlKit:layoutk:tab')
-    implementation project(':AXmlKit:recyclerk')
-    implementation project(':AXmlKit:recyclerk:quick')
-    implementation project(':AXmlKit:layoutk:navbar')
-    implementation project(':AXmlKit:vhk')
+    implementation 'com.github.mozhimen.AXmlKit:layoutk-tab:0.0.1'
+    implementation 'com.github.mozhimen.AXmlKit:recyclerk:0.0.1'
+    implementation 'com.github.mozhimen.AXmlKit:recyclerk-quick:0.0.1'
+    implementation 'com.github.mozhimen.AXmlKit:layoutk-navbar:0.0.1'
+    implementation 'com.github.mozhimen.AXmlKit:vhk:0.0.1'
 
     //test
     testImplementation 'junit:junit:4.13.2'
