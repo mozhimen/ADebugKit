@@ -30,7 +30,7 @@ android {
 }
 
 dependencies {
-    debugImplementation project(':ALibKit_Squareup:leakcanary_android')//'com.squareup.leakcanary:leakcanary-android:2.14'
+    debugImplementation 'com.github.mozhimen.ALibKit_Squareup:leakcanary-android:0.0.1'//'com.squareup.leakcanary:leakcanary-android:2.14'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
