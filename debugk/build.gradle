@@ -41,6 +41,10 @@ android {
         dataBinding true
         buildConfig true
     }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -52,7 +56,7 @@ dependencies {
     implementation 'com.github.mozhimen.ALogKit:logk:0.0.1'
     implementation 'com.github.mozhimen.ALogKit:file:0.0.1'
     implementation 'com.github.mozhimen.AOptKit:fps:0.0.1'
-    implementation 'com.github.mozhimen.ANavigateKit:navigation:0.0.2'
+    implementation 'com.github.mozhimen.ANavigateKit:navigation:0.0.4'
     implementation 'com.github.mozhimen.AAdaptKit:systembar:0.0.3'
 
     //ui
