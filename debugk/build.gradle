@@ -44,31 +44,23 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.0.4'
-    implementation 'com.github.mozhimen.ASwiftKit:xmlk:2.0.4'
-    implementation 'com.github.mozhimen.ASwiftKit:uik:2.0.4'
-    implementation project(':APermissionKit:permissionk')
-
-    //crash
-    implementation project(':ACrashKit:java')
-
-    //log
-    implementation project(':ALogKit:logk')
-    implementation project(':ALogKit:file')
-
-    //opt
-    implementation project(':AOptKit:fps')
-
-    //navigate
-    implementation project(':ANavigateKit:navigation')
-    implementation project(':AAdaptKit:systembar')
+    implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.1.6'
+    implementation 'com.github.mozhimen.ASwiftKit:xmlk:2.1.6'
+    implementation 'com.github.mozhimen.ASwiftKit:uik:2.1.6'
+    implementation 'com.github.mozhimen.APermissionKit:permissionk:0.0.1'
+    implementation 'com.github.mozhimen.ACrashKit:java:0.0.7'
+    implementation 'com.github.mozhimen.ALogKit:logk:0.0.1'
+    implementation 'com.github.mozhimen.ALogKit:file:0.0.1'
+    implementation 'com.github.mozhimen.AOptKit:fps:0.0.1'
+    implementation 'com.github.mozhimen.ANavigateKit:navigation:0.0.2'
+    implementation 'com.github.mozhimen.AAdaptKit:systembar:0.0.3'
 
     //ui
-    implementation 'com.github.mozhimen.AXmlKit:layoutk-tab:0.0.1'
-    implementation 'com.github.mozhimen.AXmlKit:recyclerk:0.0.1'
-    implementation 'com.github.mozhimen.AXmlKit:recyclerk-quick:0.0.1'
-    implementation 'com.github.mozhimen.AXmlKit:layoutk-navbar:0.0.1'
-    implementation 'com.github.mozhimen.AXmlKit:vhk:0.0.1'
+    implementation 'com.github.mozhimen.AXmlKit:layoutk-tab:0.0.5'
+    implementation 'com.github.mozhimen.AXmlKit:recyclerk:0.0.5'
+    implementation 'com.github.mozhimen.AXmlKit:recyclerk-quick:0.0.5'
+    implementation 'com.github.mozhimen.AXmlKit:layoutk-navbar:0.0.5'
+    implementation 'com.github.mozhimen.AXmlKit:vhk:0.0.5'
 
     //test
     testImplementation 'junit:junit:4.13.2'
